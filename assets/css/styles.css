@@ -1,0 +1,97 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(52, 169, 157, 0.2), transparent 34%),
+    radial-gradient(circle at top right, rgba(69, 131, 147, 0.18), transparent 30%),
+    linear-gradient(180deg, #fff3c8 0%, #f9e9b8 100%);
+  color: #24515b;
+}
+
+[data-bs-theme=dark] body {
+  background:
+    radial-gradient(circle at top left, rgba(52, 169, 157, 0.18), transparent 34%),
+    radial-gradient(circle at top right, rgba(229, 203, 144, 0.12), transparent 30%),
+    linear-gradient(180deg, #18353d 0%, #12282e 100%);
+  color: #fff3c8;
+}
+
+.navbar {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.navbar.bg-body,
+footer.bg-body {
+  background-color: rgba(255, 243, 200, 0.65) !important;
+}
+
+[data-bs-theme=dark] .navbar.bg-body,
+[data-bs-theme=dark] footer.bg-body {
+  background-color: rgba(24, 53, 61, 0.7) !important;
+}
+
+.card {
+  border: 1px solid rgba(69, 131, 147, 0.16);
+  border-radius: 1.15rem;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 12px 30px rgba(30, 62, 71, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+[data-bs-theme=dark] .card {
+  background: rgba(20, 37, 42, 0.78);
+  border-color: rgba(229, 203, 144, 0.14);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover,
+.card-link:hover .card {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 38px rgba(30, 62, 71, 0.16);
+  border-color: rgba(52, 169, 157, 0.45);
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  color: inherit;
+}
+
+.card-link .card {
+  cursor: pointer;
+}
+
+.card-title,
+h2,
+h4 {
+  color: inherit;
+}
+
+.bs-icon-primary {
+  background-color: #34a99d !important;
+  color: #17353d !important;
+}
+
+.theme-toggle {
+  min-width: 6rem;
+  border-radius: 999px;
+}
+
+.nav-link.active {
+  color: #34a99d !important;
+  font-weight: 600;
+}
+
+[data-bs-theme=dark] .nav-link.active {
+  color: #fff3c8 !important;
+}
+
